@@ -11,6 +11,18 @@ Summary: A Python to Java bridge.
 
 A Python to Java bridge.
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jpype1-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jpype1-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/jpype1-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jpype1-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jpype1-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jpype1-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpype1/badges/version.svg)](https://anaconda.org/conda-forge/jpype1)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpype1/badges/downloads.svg)](https://anaconda.org/conda-forge/jpype1)
+
 Installing jpype1
 =================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `jpype1` available on your platfor
 ```
 conda search jpype1 --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jpype1-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jpype1-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/jpype1-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jpype1-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jpype1-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jpype1-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpype1/badges/version.svg)](https://anaconda.org/conda-forge/jpype1)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpype1/badges/downloads.svg)](https://anaconda.org/conda-forge/jpype1)
 
 
 Updating jpype1-feedstock
