@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://github.com/originell/jpype/
-  license: Apache 2.0
+  license: Apache
   license_file: LICENSE
   summary: 'A Python to Java bridge.'
   description: 'A Python to Java bridge.'
