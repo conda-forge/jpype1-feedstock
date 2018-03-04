@@ -17,10 +17,14 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.8.*  # [not (win and (py35 or py36))]
+    - numpy 1.9.*  # [win and py35]
+    - numpy 1.11.*  # [win and py36]
   run:
     - python
-    - numpy x.x
+    - numpy >=1.8  # [not (win and (py35 or py36))]
+    - numpy >=1.9  # [win and py35]
+    - numpy >=1.11  # [win and py36]
 
 test:
   imports:
@@ -28,7 +32,7 @@ test:
 
 about:
   home: https://github.com/originell/jpype/
-  license: Apache 2.0
+  license: Apache
   license_file: LICENSE
   summary: 'A Python to Java bridge.'
   description: 'A Python to Java bridge.'
