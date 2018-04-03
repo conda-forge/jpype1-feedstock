@@ -3,7 +3,7 @@ About jpype1
 
 Home: https://github.com/originell/jpype/
 
-Package license: Apache 2.0
+Package license: Apache
 
 Feedstock license: BSD 3-Clause
 
