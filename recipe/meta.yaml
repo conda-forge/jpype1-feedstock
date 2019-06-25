@@ -1,4 +1,4 @@
-{% set version = "0.6.3" %}
+{% set version = "0.7" %}
 
 package:
   name: jpype1
@@ -7,7 +7,7 @@ package:
 source:
   fn: jpype-{{ version }}.tar.gz
   url: https://github.com/originell/jpype/archive/v{{ version }}.tar.gz
-  sha256: 5c447f4ac2d97f60ee1753fa59dd32ebdc29e16571db9ce2fb7a67362d459e22
+  sha256: 1630439d5b0fb49e2878b43a1a1f074f9d4f46520f525569e14f1f0f9399f871 
 
 build:
   number: 1000
