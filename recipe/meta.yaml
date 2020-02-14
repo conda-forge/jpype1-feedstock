@@ -1,14 +1,12 @@
 {% set version = "0.7" %}
-{% set name = "jpype1" %} 
+{% set name = "JPype1" %} 
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  # TODO: this should be this url, but leads to 404
-  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://files.pythonhosted.org/packages/28/63/784834e8a24ec2e1ad7f703c3dc6c6fb372a77cc68a2fdff916e18a4449e/JPype1-0.7.0.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 1630439d5b0fb49e2878b43a1a1f074f9d4f46520f525569e14f1f0f9399f871
 
 build:
@@ -43,3 +41,4 @@ extra:
   recipe-maintainers:
     - caspervdw
     - marscher
+    - mariusvniekerk
