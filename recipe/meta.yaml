@@ -1,13 +1,13 @@
-{% set version = "0.7.1" %}
-{% set name = "JPype1" %} 
+{% set version = "0.7.2" %}
+{% set name = "JPype1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c16d01cde9c2c955d76d45675e64b06c3255784d49cea4147024e99a01fbbb18
+  url: https://github.com/jpype-project/jpype/archive/v{{ version }}.tar.gz
+  sha256: 904b4bbf6e00675791728fc190684ee1787dab9b090ec51743d2d0d89fb2936b
 
 build:
   number: 0
@@ -30,7 +30,7 @@ test:
     - jpype
 
 about:
-  home: https://github.com/originell/jpype/
+  home: https://github.com/jpype-project/jpype
   license: Apache
   license_file: LICENSE
   summary: 'A Python to Java bridge.'
@@ -42,3 +42,4 @@ extra:
     - caspervdw
     - marscher
     - mariusvniekerk
+    - sdvillal
