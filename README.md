@@ -221,5 +221,4 @@ Feedstock Maintainers
 * [@caspervdw](https://github.com/caspervdw/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
 * [@marscher](https://github.com/marscher/)
-* [@sdvillal](https://github.com/sdvillal/)
 
