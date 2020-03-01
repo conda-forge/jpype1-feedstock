@@ -28,7 +28,7 @@ test:
     - jpype
 
 about:
-  home: https://github.com/originell/jpype/
+  home: https://github.com/jpype-project/jpype
   license: Apache
   license_file: LICENSE
   summary: 'A Python to Java bridge.'
