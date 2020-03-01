@@ -1,5 +1,5 @@
-{% set version = "0.7.1" %}
-{% set name = "JPype1" %} 
+{% set version = "0.7.2" %}
+{% set name = "JPype1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c16d01cde9c2c955d76d45675e64b06c3255784d49cea4147024e99a01fbbb18
+  sha256: cb31c7b89b90f0276c19d525b3d2df908e06d3a5066a2df839cc824b73943b6e
 
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv"
+  skip: True  # [py2k]
 
 requirements:
   build:
@@ -20,17 +21,15 @@ requirements:
     - python
     - setuptools
     - pip
-    - numpy
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
     - jpype
 
 about:
-  home: https://github.com/originell/jpype/
+  home: https://github.com/jpype-project/jpype
   license: Apache
   license_file: LICENSE
   summary: 'A Python to Java bridge.'
