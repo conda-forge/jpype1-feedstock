@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 92f24b0fe11e90b57343494ce38699043d9e6828a22a99dddbcf99c0adb4c1f7
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  sha256: c5736e2e80e4cd70ce9fb2da28eb1afd779e3ee5fbceb6da71938f73e2ed224c
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv
   skip: true  # [py2k]
 
