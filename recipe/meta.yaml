@@ -1,17 +1,18 @@
-{% set version = "0.6.3" %}
+{% set version = "0.7.4" %}
+{% set name = "JPype1" %}
 
 package:
-  name: jpype1
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: jpype-{{ version }}.tar.gz
-  url: https://github.com/originell/jpype/archive/v{{ version }}.tar.gz
-  sha256: 5c447f4ac2d97f60ee1753fa59dd32ebdc29e16571db9ce2fb7a67362d459e22
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 92f24b0fe11e90b57343494ce38699043d9e6828a22a99dddbcf99c0adb4c1f7
 
 build:
-  number: 1000
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv
+  skip: true  # [py2k]
 
 requirements:
   build:
@@ -20,24 +21,23 @@ requirements:
     - python
     - setuptools
     - pip
-    - numpy
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
     - jpype
 
 about:
-  home: https://github.com/originell/jpype/
+  home: https://github.com/jpype-project/jpype
   license: Apache
   license_file: LICENSE
-  summary: 'A Python to Java bridge.'
-  description: 'A Python to Java bridge.'
+  summary: A Python to Java bridge.
+  description: A Python to Java bridge.
   doc_url: http://jpype.readthedocs.io/en/stable/
 
 extra:
   recipe-maintainers:
     - caspervdw
     - marscher
+    - mariusvniekerk
