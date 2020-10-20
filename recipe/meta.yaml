@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 {% set name = "JPype1" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c751436350c105f403e382574d34a6ad73e4a677cb0ff5bc9a87581cc07094e1
+  sha256: 909c742303ea5fd2b9c51f0004a467e51d1db983c5446e71c5f63bcc5957f400
 
 build:
   number: 0
