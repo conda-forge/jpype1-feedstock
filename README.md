@@ -5,9 +5,11 @@ Home: https://github.com/jpype-project/jpype
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jpype1-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python to Java bridge.
+
+Documentation: http://jpype.readthedocs.io/en/stable/
 
 A Python to Java bridge.
 
