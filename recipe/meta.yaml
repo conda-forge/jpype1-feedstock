@@ -11,16 +11,16 @@ source:
 
 build:
   number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv
   skip: true  # [py2k or (py>38 and win)]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('cxx') }}
   host:
     - python
-    - setuptools
     - pip
+    - setupext
   run:
     - python
     - typing_extensions  # [py<38]
@@ -28,6 +28,10 @@ requirements:
 test:
   imports:
     - jpype
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/jpype-project/jpype
