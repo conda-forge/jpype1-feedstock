@@ -12,7 +12,7 @@ source:
 build:
   number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv
-  skip: true  # [py2k or (py39 and win)]
+  skip: true  # [py2k or (py>38 and win)]
 
 requirements:
   build:
