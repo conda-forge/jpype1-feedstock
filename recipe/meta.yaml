@@ -20,7 +20,7 @@ requirements:
   host:
     - python
     - pip
-    - setupext
+    # - setupext unavailable
   run:
     - python
     - typing_extensions  # [py<38]
