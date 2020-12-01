@@ -10,17 +10,17 @@ source:
   sha256: c6e36de9f7ef826ff27f6d5260acc710ebc585a534c12cbac905db088ab1d992
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv
-  skip: true  # [py2k]
+  number: 1
+  skip: true  # [py2k or (py>38 and win)]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('cxx') }}
   host:
     - python
-    - setuptools
     - pip
+    # - setupext unavailable
   run:
     - python
     - typing_extensions  # [py<38]
@@ -28,6 +28,10 @@ requirements:
 test:
   imports:
     - jpype
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/jpype-project/jpype
