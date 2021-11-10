@@ -270,6 +270,3 @@ Feedstock Maintainers
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
 * [@marscher](https://github.com/marscher/)
 
-
-<!-- dummy commit to enable rerendering -->
-
