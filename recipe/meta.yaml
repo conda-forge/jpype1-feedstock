@@ -17,7 +17,7 @@ source:
     - patches/PR_1011.patch
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
