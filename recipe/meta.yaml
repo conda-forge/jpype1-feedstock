@@ -25,6 +25,7 @@ requirements:
   run:
     - python
     - typing_extensions  # [py<38]
+    - packaging
 
 test:
   imports:
