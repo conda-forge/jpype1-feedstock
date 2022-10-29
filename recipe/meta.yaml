@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 {% set name = "JPype1" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c5f665ee3e6e31c27e9d2d48dd12bf4eb4fe6858823e6a11201a035274ccfe1
+  sha256: dc8ee854073474ad79ae168d90c2f6893854f58936cfa18f3587cadae0d3696d
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
   run:
     - python
     - typing_extensions  # [py<38]
+    - packaging
 
 test:
   imports:
