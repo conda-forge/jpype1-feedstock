@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.lower() }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.lower() }}-{{ version }}.tar.gz
   sha256: cbb8ea952bf0a0c6011f21a31a97baed241c4aad0e2499db386edfd5cf2adece
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     # - setupext unavailable
   run:
     - python
