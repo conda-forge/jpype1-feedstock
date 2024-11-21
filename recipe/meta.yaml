@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     # - setupext unavailable
   run:
     - python
