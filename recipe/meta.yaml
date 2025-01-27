@@ -1,4 +1,4 @@
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 {% set name = "JPype1" %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.lower() }}-{{ version }}.tar.gz
-  sha256: cbb8ea952bf0a0c6011f21a31a97baed241c4aad0e2499db386edfd5cf2adece
+  sha256: 74a42eccf21d30394c1832aec3985a14965fa5320da087b65029d172c0cec43b
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
