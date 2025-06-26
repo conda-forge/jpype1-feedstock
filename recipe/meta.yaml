@@ -1,13 +1,12 @@
-{% set version = "1.5.2" %}
-{% set name = "JPype1" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.lower() }}-{{ version }}.tar.gz
-  sha256: 74a42eccf21d30394c1832aec3985a14965fa5320da087b65029d172c0cec43b
+  url: https://github.com/jpype-project/jpype/archive/refs/tags/v{{ version }}.zip
+  sha256: 7bd0b3940cebf448dd94a9a6ec3a2f17a9b349eaa55312c9b737eb4ce269b437
 
 build:
   number: 0
