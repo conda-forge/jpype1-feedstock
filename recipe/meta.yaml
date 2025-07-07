@@ -1,4 +1,4 @@
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 {% set name = "JPype1" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.lower() }}-{{ version }}.tar.gz
-  sha256: 74a42eccf21d30394c1832aec3985a14965fa5320da087b65029d172c0cec43b
+  sha256: 2d46b2a14f8f0e6f17d8aa22b4fc3a64b2790851ebf1409ad79a37c698fd6e9a
 
 build:
   number: 0
@@ -19,11 +19,13 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
+    - openjdk
   host:
     - python
     - pip
     - setuptools
     # - setupext unavailable
+
   run:
     - python
     - typing_extensions  # [py<38]
